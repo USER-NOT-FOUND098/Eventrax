@@ -22,6 +22,7 @@ app/build/
 # IDEs and OS
 .vscode/
 .idea/
+.windsurf/
 .DS_Store
 Thumbs.db
 *.suo
