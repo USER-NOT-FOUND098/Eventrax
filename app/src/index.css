@@ -1,0 +1,442 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ===================================
+   COMPREHENSIVE THEME SYSTEM
+   Applies to entire application
+   =================================== */
+
+/* Global body and root styling */
+html {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== SIDEBAR STYLING ===== */
+aside,
+[class*="sidebar"],
+nav[class*="fixed"] {
+  background-color: var(--bg-sidebar) !important;
+  border-color: var(--border-color) !important;
+}
+
+aside a,
+[class*="sidebar"] a {
+  color: var(--text-secondary) !important;
+}
+
+aside a:hover,
+[class*="sidebar"] a:hover,
+aside a[class*="active"],
+[class*="sidebar"] a[class*="active"] {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-hover) !important;
+}
+
+/* ===== HEADER STYLING ===== */
+header {
+  background-color: var(--bg-header) !important;
+  border-color: var(--border-color) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* ===== CARD STYLING ===== */
+[class*="card"],
+[class*="rounded-2xl"][class*="border"],
+[class*="rounded-xl"][class*="border"],
+[class*="bg-"][class*="p-6"] {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border-card) !important;
+}
+
+/* ===== INPUT STYLING ===== */
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+textarea,
+select {
+  background-color: var(--bg-input) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-input) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent-primary) !important;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--glow-color);
+}
+
+/* ===== BUTTON VARIANTS ===== */
+/* Primary buttons */
+button[class*="bg-indigo"],
+button[class*="bg-violet"],
+button[class*="bg-purple"],
+button[class*="bg-gradient"] {
+  background: linear-gradient(135deg, var(--accent-gradient-from), var(--accent-gradient-to)) !important;
+  color: var(--btn-primary-text) !important;
+}
+
+button[class*="bg-indigo"]:hover,
+button[class*="bg-violet"]:hover,
+button[class*="bg-purple"]:hover,
+button[class*="bg-gradient"]:hover {
+  filter: brightness(1.1);
+}
+
+/* Ghost/outline buttons */
+button[class*="ghost"],
+button[class*="outline"] {
+  color: var(--text-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+button[class*="ghost"]:hover,
+button[class*="outline"]:hover {
+  background-color: var(--bg-hover) !important;
+  color: var(--text-primary) !important;
+}
+
+/* ===== TABLE STYLING ===== */
+table {
+  color: var(--text-primary);
+}
+
+th {
+  color: var(--text-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+td {
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+tr:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+/* ===== DROPDOWN/POPOVER STYLING ===== */
+[data-radix-popper-content-wrapper]>div,
+[role="menu"],
+[role="listbox"],
+[class*="DropdownMenuContent"],
+[class*="SelectContent"],
+[class*="popover"] {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[role="menuitem"],
+[role="option"] {
+  color: var(--text-secondary) !important;
+}
+
+[role="menuitem"]:hover,
+[role="option"]:hover,
+[role="menuitem"]:focus,
+[role="option"]:focus {
+  background-color: var(--bg-hover) !important;
+  color: var(--text-primary) !important;
+}
+
+/* ===== MODAL/DIALOG STYLING ===== */
+[role="dialog"],
+[class*="DialogContent"] {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* ===== STATS CARDS ===== */
+[class*="stats"],
+[class*="stat-card"] {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border-card) !important;
+}
+
+/* ===== SEARCH BAR ===== */
+[class*="search"] input {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-input) !important;
+}
+
+/* ===== STATUS BADGES ===== */
+[class*="badge"],
+[class*="status"] {
+  border-color: transparent !important;
+}
+
+/* ===== CALENDAR/DATE PICKER ===== */
+input[type="datetime-local"],
+input[type="date"],
+input[type="time"] {
+  color-scheme: dark;
+}
+
+.theme-light input[type="datetime-local"],
+.theme-light input[type="date"],
+.theme-light input[type="time"],
+.theme-cherry input[type="datetime-local"],
+.theme-cherry input[type="date"],
+.theme-cherry input[type="time"] {
+  color-scheme: light;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
+}
+
+.theme-dark input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+.theme-dark input[type="date"]::-webkit-calendar-picker-indicator,
+.theme-dark input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+
+/* ===== SCROLLBAR STYLING ===== */
+/* Apple-style Overlay Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Touch target size */
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white */
+  border-radius: 9999px;
+  /* Fully, pill-shaped */
+  border: 4px solid transparent;
+  /* Creates padding effect (illusion of thin bar) */
+  background-clip: content-box;
+  /* Only color the content, effectively thinning it */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 3px solid transparent;
+  /* Slightly thicker on hover */
+}
+
+
+/* Hide scrollbar for clean look but allow scrolling (optional, use with caution) 
+   or keep it minimal as defined above */
+
+/* ===== CHERRY THEME SPECIFIC ===== */
+/* Make cherry theme truly beautiful with pink accents throughout */
+.theme-cherry {
+  /* Override any remaining dark colors */
+  --background: 330 100% 98%;
+  --foreground: 330 100% 15%;
+}
+
+.theme-cherry aside,
+.theme-cherry [class*="sidebar"] {
+  background: linear-gradient(180deg, #FFF0F5 0%, #FFE4EC 100%) !important;
+  border-right: 1px solid rgba(236, 72, 153, 0.15) !important;
+}
+
+.theme-cherry header {
+  background: linear-gradient(90deg, rgba(255, 240, 245, 0.95) 0%, rgba(255, 228, 236, 0.95) 100%) !important;
+}
+
+.theme-cherry button[class*="bg-indigo"],
+.theme-cherry button[class*="bg-violet"],
+.theme-cherry button[class*="bg-gradient"] {
+  background: linear-gradient(135deg, #EC4899 0%, #F472B6 100%) !important;
+}
+
+.theme-cherry [class*="bg-emerald"],
+.theme-cherry button[class*="bg-emerald"] {
+  background: linear-gradient(135deg, #10B981 0%, #34D399 100%) !important;
+}
+
+.theme-cherry a[class*="active"],
+.theme-cherry [aria-current="page"] {
+  background-color: rgba(236, 72, 153, 0.15) !important;
+  color: #BE185D !important;
+}
+
+.theme-cherry .text-indigo-400,
+.theme-cherry .text-indigo-500,
+.theme-cherry .text-violet-400,
+.theme-cherry .text-violet-500 {
+  color: #EC4899 !important;
+}
+
+.theme-cherry .bg-indigo-500\/10,
+.theme-cherry .bg-indigo-500\/20 {
+  background-color: rgba(236, 72, 153, 0.1) !important;
+}
+
+.theme-cherry .border-indigo-500,
+.theme-cherry .ring-indigo-500 {
+  border-color: #EC4899 !important;
+}
+
+.theme-cherry .ring-indigo-500\/30 {
+  --tw-ring-color: rgba(236, 72, 153, 0.3) !important;
+}
+
+/* Cherry theme icons */
+.theme-cherry .lucide {
+  color: var(--text-secondary);
+}
+
+/* Cherry theme logo icon */
+.theme-cherry .bg-indigo-500 {
+  background: linear-gradient(135deg, #EC4899 0%, #F472B6 100%) !important;
+}
+
+/* ===== LIGHT THEME SPECIFIC ===== */
+.theme-light {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+}
+
+.theme-light aside,
+.theme-light [class*="sidebar"] {
+  background-color: #FFFFFF !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.theme-light header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.theme-light td,
+.theme-light th,
+.theme-light p,
+.theme-light span,
+.theme-light h1,
+.theme-light h2,
+.theme-light h3 {
+  color: var(--text-primary);
+}
+
+/* ===== TRANSITION FOR SMOOTH THEME SWITCHING ===== */
+*,
+*::before,
+*::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.15s ease;
+}
+
+/* Disable transitions during theme change to prevent flashing */
+.theme-transitioning * {
+  transition: none !important;
+}
+
+/* ===== LANDING/HERO PAGE ===== */
+.hero-section,
+[class*="hero"],
+[class*="landing"] {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+.theme-cherry .hero-section,
+.theme-cherry [class*="hero"],
+.theme-cherry [class*="landing"] {
+  background: linear-gradient(180deg, #FFF0F5 0%, #FFE4EC 50%, #FFF0F5 100%) !important;
+}
+
+.theme-light .hero-section,
+.theme-light [class*="hero"],
+.theme-light [class*="landing"] {
+  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 50%, #F8FAFC 100%) !important;
+}
