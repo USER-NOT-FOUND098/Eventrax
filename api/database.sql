@@ -111,8 +111,8 @@ CREATE TABLE IF NOT EXISTS announcements (
     FOREIGN KEY (event_id) REFERENCES events(id) ON DELETE CASCADE
 );
 
--- Default Admin User (Password: password)
--- Hash generated using password_hash('password', PASSWORD_DEFAULT)
+-- Default Admin User 
+-- Hash generated using password_hash('admin123', PASSWORD_DEFAULT)
 INSERT INTO users (name, email, password_hash, role, institution, avatar) 
 VALUES ('System Admin', 'admin@eventrax.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', 'Eventrax HQ', 'https://api.dicebear.com/7.x/avataaars/svg?seed=admin')
 ON DUPLICATE KEY UPDATE email=email;
