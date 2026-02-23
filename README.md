@@ -53,22 +53,12 @@ cd eventrax
 
 2. **Create Database**:
    - Open phpMyAdmin: `http://localhost/phpmyadmin`
-   - Create a new database named `eventrax_db`
-   - Import the initial schema:
-     - Go to the **SQL** tab
-     - Copy and paste the contents of `api/database.sql`
+   - Import the full local database schema (this automatically creates `eventrax_db` and all tables):
+     - Go to the **Import** tab
+     - Select the `api/database_local.sql` file
      - Click **Go**
-
-3. **Run Migrations**:
-   - Open the **SQL** tab in phpMyAdmin
-   - Run the Phase 2 migration:
-     ```sql
-     -- Copy contents from api/migrations/phase2_migration.sql
-     ```
-   - Run the Notifications migration:
-     ```sql
-     -- Copy contents from api/migrations/notifications_migration.sql
-     ```
+   
+   *(Note: The `api/migrations/` folder is kept in the repository purely as a historical record of how the database schema evolved over time. You do not need to run these files; the `database_local.sql` file already contains all up-to-date tables and features).*
 
 ### 3. Backend Setup (PHP API)
 

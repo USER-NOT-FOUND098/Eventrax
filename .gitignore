@@ -1,5 +1,6 @@
 # Backend Secrets
 api/config/db.php
+api/database_production.sql
 
 # Internal Documentation 
 docs/
