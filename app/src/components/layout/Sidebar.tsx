@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
 import { useSidebar } from '@/contexts/SidebarContext';
-import { useTheme } from '@/contexts/ThemeContext';
 import {
   LayoutDashboard,
   Calendar,
@@ -74,7 +73,6 @@ export function Sidebar() {
   const { user, logout, isAdmin, isCreator, isTeamLead, isStudent } = useAuth();
   const location = useLocation();
   const { collapsed, toggleCollapsed } = useSidebar();
-  const { theme } = useTheme();
   const [pendingTasks, setPendingTasks] = useState(0);
 
   useEffect(() => {

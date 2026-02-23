@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -30,7 +29,6 @@ import { format } from 'date-fns';
 import { toast } from 'sonner';
 
 export function AdminUsers() {
-  const navigate = useNavigate();
   const { collapsed } = useSidebar();
   const [users, setUsers] = useState<User[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
