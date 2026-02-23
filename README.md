@@ -74,9 +74,9 @@ cd eventrax
 
 1. **Move API to XAMPP**:
    - Copy the `api` folder to `C:\xampp\htdocs\eventrax\`
-   - Or create a symbolic link:
+   - Or create a symbolic link (replace the second path with your actual download location):
      ```powershell
-     mklink /D "C:\xampp\htdocs\eventrax" "F:\PROJECT 77\eventrax"
+     mklink /D "C:\xampp\htdocs\eventrax" "C:\your\download\folder\eventrax"
      ```
 
 2. **Configure Database Connection**:
