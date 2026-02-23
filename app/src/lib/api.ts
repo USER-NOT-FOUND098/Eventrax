@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// In production: uses VITE_API_BASE_URL from .env.production (set to https://api.eventrax.qzz.io/v1)
-// In development: falls back to localhost so local dev still works normally
-const API_URL = import.meta.env.VITE_API_BASE_URL || `http://${window.location.hostname}/eventrax/api/v1`;
+// Automatically point to the XAMPP API folder on whatever local IP or hostname the React app is served from
+const API_URL = `http://${window.location.hostname}/eventrax/api/v1`;
 
 const api = axios.create({
     baseURL: API_URL,
