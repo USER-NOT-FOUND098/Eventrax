@@ -119,12 +119,25 @@ npm run dev
 npm run dev --prefix app
 ```
 
-### Example Login Credentials
+### Default Login Credentials
 
-**Example Admin Account**:
+**System Admin Account** (Pre-configured in database):
 - Email: `admin@eventrax.com`
 - Password: `admin123`
+
 *(Note: Remember to change default credentials in production!)*
+
+### Creating Test Accounts for Other Roles
+
+To explore the different dashboards and features of the platform, you can easily create dummy accounts using the built-in authentication system:
+
+1. Go to the URL where your app is running (e.g., `http://localhost:5173/register`) or click **"Sign Up"** on the login screen.
+2. Fill out the registration form. You can select the role you want to test from the dropdown (Student, Event Creator, or Team Lead).
+3. Example dummy accounts you might create:
+   - **Creator:** `creator@eventrax.com`
+   - **Student:** `student@eventrax.com`
+   - **Team Lead:** `teamlead@eventrax.com`
+4. **Approval Required:** By default, new Event Creators and Team Leads require approval. Log into the System Admin account (`admin@eventrax.com`), navigate to the "Users" dashboard, and click the green checkmark to manually approve your newly created dummy accounts so they can log in!
 
 ## Project Structure
 

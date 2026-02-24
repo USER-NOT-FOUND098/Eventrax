@@ -44,10 +44,7 @@ CREATE TABLE `accessories` (
 -- Dumping data for table `accessories`
 --
 
-LOCK TABLES `accessories` WRITE;
-/*!40000 ALTER TABLE `accessories` DISABLE KEYS */;
-INSERT INTO `accessories` VALUES (1,2,'sound system',1,500.00,500.00,'available');
-/*!40000 ALTER TABLE `accessories` ENABLE KEYS */;
+/* No data for `accessories` */
 UNLOCK TABLES;
 
 --
@@ -75,10 +72,7 @@ CREATE TABLE `admin_logs` (
 -- Dumping data for table `admin_logs`
 --
 
-LOCK TABLES `admin_logs` WRITE;
-/*!40000 ALTER TABLE `admin_logs` DISABLE KEYS */;
-INSERT INTO `admin_logs` VALUES (1,8,'suspend','user',7,'Action: suspend on teststudent@test.com. Reason: ','2026-01-30 12:26:14'),(2,8,'activate','user',7,'Action: activate on teststudent@test.com. Reason: ','2026-01-30 12:26:20'),(3,8,'approve','user',9,'Approved user: adam@gmail.com','2026-01-30 14:14:10'),(4,8,'suspend','user',5,'Action: suspend on creater@gmail.com. Reason: ','2026-01-30 18:33:57'),(5,8,'activate','user',5,'Action: activate on creater@gmail.com. Reason: ','2026-01-30 18:34:04'),(6,8,'suspend','user',11,'Action: suspend on dineshg200611@gmail.com. Reason: ','2026-02-02 05:58:19'),(7,8,'activate','user',11,'Action: activate on dineshg200611@gmail.com. Reason: ','2026-02-02 05:58:46'),(8,8,'suspend','user',11,'Action: suspend on dineshg200611@gmail.com. Reason: ','2026-02-02 06:31:00'),(9,8,'activate','user',11,'Action: activate on dineshg200611@gmail.com. Reason: ','2026-02-02 06:31:08'),(10,8,'approve','user',14,'Approved user: gary@gmail.com (by admin)','2026-02-05 14:13:09'),(11,8,'reject','user',15,'Rejected user registration: hola@gmail.com (by admin)','2026-02-05 14:18:41'),(12,8,'delete','user',33,'Deleted user: active_tl_SA42@eventrax.com','2026-02-06 00:28:47'),(13,8,'delete','user',32,'Deleted user: active_tl_0T5R@eventrax.com','2026-02-06 00:28:52'),(14,8,'delete','user',31,'Deleted user: active_tl_M5HI@eventrax.com','2026-02-06 00:28:57'),(15,8,'delete','user',30,'Deleted user: active_tl_RDT3@eventrax.com','2026-02-06 00:29:01'),(16,8,'delete','user',29,'Deleted user: active_tl_U9KB@eventrax.com','2026-02-06 00:29:05'),(17,8,'delete','user',28,'Deleted user: active_tl_E8R0@eventrax.com','2026-02-06 00:29:09'),(18,8,'delete','user',34,'Deleted user: active_tl_U38X@eventrax.com','2026-02-06 00:29:54'),(19,8,'delete','user',12,'Deleted user: tina@gmail.com','2026-02-22 17:05:39');
-/*!40000 ALTER TABLE `admin_logs` ENABLE KEYS */;
+/* No data for `admin_logs` */
 UNLOCK TABLES;
 
 --
@@ -105,10 +99,7 @@ CREATE TABLE `announcement_reads` (
 -- Dumping data for table `announcement_reads`
 --
 
-LOCK TABLES `announcement_reads` WRITE;
-/*!40000 ALTER TABLE `announcement_reads` DISABLE KEYS */;
-INSERT INTO `announcement_reads` VALUES (1,2,8,'2026-01-31 14:28:17'),(3,2,9,'2026-01-31 14:29:27'),(5,2,4,'2026-01-31 14:33:02'),(7,3,9,'2026-01-31 19:37:55'),(8,3,8,'2026-01-31 19:38:41'),(9,4,8,'2026-01-31 19:38:44'),(10,4,9,'2026-01-31 20:16:29'),(11,3,4,'2026-01-31 21:43:26'),(12,4,4,'2026-01-31 21:43:28'),(14,9,4,'2026-02-03 14:07:49'),(15,10,4,'2026-02-03 14:07:50'),(16,11,4,'2026-02-03 14:07:51'),(18,9,8,'2026-02-03 14:24:47'),(19,10,8,'2026-02-03 14:24:49'),(20,11,8,'2026-02-03 14:24:50'),(21,9,9,'2026-02-03 15:29:54'),(22,10,9,'2026-02-03 15:29:55'),(23,11,9,'2026-02-03 15:29:56'),(24,9,5,'2026-02-05 23:34:22'),(25,10,5,'2026-02-05 23:34:24'),(26,2,5,'2026-02-05 23:34:27'),(27,4,5,'2026-02-05 23:34:29'),(28,11,5,'2026-02-05 23:34:30'),(29,3,5,'2026-02-05 23:34:31'),(30,9,16,'2026-02-06 00:02:25'),(31,10,16,'2026-02-06 00:02:27'),(32,2,16,'2026-02-06 00:02:31'),(33,4,16,'2026-02-06 00:02:33'),(34,11,16,'2026-02-06 00:02:34'),(35,3,16,'2026-02-06 00:02:36');
-/*!40000 ALTER TABLE `announcement_reads` ENABLE KEYS */;
+/* No data for `announcement_reads` */
 UNLOCK TABLES;
 
 --
@@ -140,10 +131,7 @@ CREATE TABLE `announcements` (
 -- Dumping data for table `announcements`
 --
 
-LOCK TABLES `announcements` WRITE;
-/*!40000 ALTER TABLE `announcements` DISABLE KEYS */;
-INSERT INTO `announcements` VALUES (2,2,'register','aaaa',8,'medium','2026-01-30 15:03:47',NULL,'all'),(3,2,'GOING TO START SOOON','SUB EVENT',9,'medium','2026-01-31 19:25:17',NULL,'all'),(4,2,'lets go','go',9,'medium','2026-01-31 19:38:24',NULL,'all'),(9,2,'Welcome to TechFest 2024!','Get ready for an amazing tech festival filled with workshops, competitions, and networking opportunities.',5,'high','2026-02-03 13:15:59',NULL,'all'),(10,2,'Opening Ceremony Instructions','Please arrive 30 minutes early. Dress code is formal. VIP passes will be checked at entrance.',5,'medium','2026-02-03 13:15:59',2,'all'),(11,2,'Schedule Update','The AI workshop has been moved to Room 201. Please check the updated schedule.',5,'medium','2026-02-03 13:15:59',NULL,'all');
-/*!40000 ALTER TABLE `announcements` ENABLE KEYS */;
+/* No data for `announcements` */
 UNLOCK TABLES;
 
 --
@@ -173,10 +161,7 @@ CREATE TABLE `chat_messages` (
 -- Dumping data for table `chat_messages`
 --
 
-LOCK TABLES `chat_messages` WRITE;
-/*!40000 ALTER TABLE `chat_messages` DISABLE KEYS */;
-INSERT INTO `chat_messages` VALUES (1,2,8,'hi',0,'2026-01-30 15:04:17',NULL),(2,2,9,'hi',0,'2026-01-31 14:30:24',NULL),(5,2,8,'hi',0,'2026-02-02 22:36:50',2),(6,2,4,'Has the venue been changed?',0,'2026-02-02 22:58:36',2),(7,2,4,'hi',0,'2026-02-02 23:00:21',2),(8,2,4,'Test admin message for debugging user info',0,'2026-02-02 23:13:26',2),(9,2,4,'Test admin message for debugging user info',0,'2026-02-02 23:13:31',2),(10,2,8,'hi',0,'2026-02-02 23:16:56',2),(12,2,4,'Welcome everyone to the opening ceremony! 🎉',0,'2026-02-03 13:32:10',2),(13,2,5,'Looking forward to the keynote speech',0,'2026-02-03 13:32:10',2),(14,2,8,'Where should we sit for the VIP section?',0,'2026-02-03 13:32:10',2),(15,2,4,'Please check your schedules for the seating arrangement',0,'2026-02-03 13:32:10',2),(16,2,4,'Are refreshments provided at the event?',0,'2026-02-03 23:43:16',2),(17,2,14,'hi',0,'2026-02-05 21:02:39',2),(18,2,8,'System: Team Lead SA42 has been removed from the Team Lead role.',0,'2026-02-06 00:21:27',2);
-/*!40000 ALTER TABLE `chat_messages` ENABLE KEYS */;
+/* No data for `chat_messages` */
 UNLOCK TABLES;
 
 --
@@ -211,10 +196,7 @@ CREATE TABLE `event_applications` (
 -- Dumping data for table `event_applications`
 --
 
-LOCK TABLES `event_applications` WRITE;
-/*!40000 ALTER TABLE `event_applications` DISABLE KEYS */;
-INSERT INTO `event_applications` VALUES (1,2,9,'approved','i want to join as creator\n',8,'2026-01-31 12:08:50','2026-01-31 12:06:42','2026-01-31 12:06:42','2026-01-31 12:08:50');
-/*!40000 ALTER TABLE `event_applications` ENABLE KEYS */;
+/* No data for `event_applications` */
 UNLOCK TABLES;
 
 --
@@ -251,10 +233,7 @@ CREATE TABLE `events` (
 -- Dumping data for table `events`
 --
 
-LOCK TABLES `events` WRITE;
-/*!40000 ALTER TABLE `events` DISABLE KEYS */;
-INSERT INTO `events` VALUES (2,'Tech Summit','tech event','https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=400&fit=crop','https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=400&fit=crop','audi','2026-03-05 09:00:00','2026-03-07 17:00:00','upcoming',10000.00,8,9,'','2026-01-30 12:28:56');
-/*!40000 ALTER TABLE `events` ENABLE KEYS */;
+/* No data for `events` */
 UNLOCK TABLES;
 
 --
@@ -289,10 +268,7 @@ CREATE TABLE `expenses` (
 -- Dumping data for table `expenses`
 --
 
-LOCK TABLES `expenses` WRITE;
-/*!40000 ALTER TABLE `expenses` DISABLE KEYS */;
-INSERT INTO `expenses` VALUES (2,2,'chair',3000.00,'Other',9,'2026-01-31 12:56:32',100,'for opening ceremony',2),(4,2,'table',2000.00,'Equipment',8,'2026-02-02 06:33:37',3,'sub event',2);
-/*!40000 ALTER TABLE `expenses` ENABLE KEYS */;
+/* No data for `expenses` */
 UNLOCK TABLES;
 
 --
@@ -359,10 +335,7 @@ CREATE TABLE `prizes` (
 -- Dumping data for table `prizes`
 --
 
-LOCK TABLES `prizes` WRITE;
-/*!40000 ALTER TABLE `prizes` DISABLE KEYS */;
-INSERT INTO `prizes` VALUES (5,2,1,'grand','cash ',10000.00,NULL,NULL,'2026-01-31 20:18:37',NULL,NULL,NULL),(6,2,1,'winner','nil',200.00,NULL,NULL,'2026-01-31 20:39:47',NULL,NULL,2),(7,2,1,'first','aloo winner',20000.00,NULL,NULL,'2026-02-02 06:01:57',NULL,NULL,2);
-/*!40000 ALTER TABLE `prizes` ENABLE KEYS */;
+/* No data for `prizes` */
 UNLOCK TABLES;
 
 --
@@ -393,10 +366,7 @@ CREATE TABLE `registrations` (
 -- Dumping data for table `registrations`
 --
 
-LOCK TABLES `registrations` WRITE;
-/*!40000 ALTER TABLE `registrations` DISABLE KEYS */;
-INSERT INTO `registrations` VALUES (1,2,NULL,4,'confirmed','2026-01-30 15:03:25');
-/*!40000 ALTER TABLE `registrations` ENABLE KEYS */;
+/* No data for `registrations` */
 UNLOCK TABLES;
 
 --
@@ -426,10 +396,7 @@ CREATE TABLE `sub_event_chat` (
 -- Dumping data for table `sub_event_chat`
 --
 
-LOCK TABLES `sub_event_chat` WRITE;
-/*!40000 ALTER TABLE `sub_event_chat` DISABLE KEYS */;
-INSERT INTO `sub_event_chat` VALUES (1,2,4,'Anonymous','Status update: I have completed my assigned task and ready for the next one.',0,'2026-02-03 18:40:28'),(2,2,4,'Anonymous','Event postponed or cancelled?',0,'2026-02-03 19:09:33'),(3,2,4,'Anonymous','Parking available at venue?',0,'2026-02-03 20:55:00');
-/*!40000 ALTER TABLE `sub_event_chat` ENABLE KEYS */;
+/* No data for `sub_event_chat` */
 UNLOCK TABLES;
 
 --
@@ -460,10 +427,7 @@ CREATE TABLE `sub_event_registrations` (
 -- Dumping data for table `sub_event_registrations`
 --
 
-LOCK TABLES `sub_event_registrations` WRITE;
-/*!40000 ALTER TABLE `sub_event_registrations` DISABLE KEYS */;
-INSERT INTO `sub_event_registrations` VALUES (4,4,2,'registered','2026-02-02 23:13:51','2026-02-02 23:13:51');
-/*!40000 ALTER TABLE `sub_event_registrations` ENABLE KEYS */;
+/* No data for `sub_event_registrations` */
 UNLOCK TABLES;
 
 --
@@ -654,10 +618,7 @@ CREATE TABLE `team_tasks` (
 -- Dumping data for table `team_tasks`
 --
 
-LOCK TABLES `team_tasks` WRITE;
-/*!40000 ALTER TABLE `team_tasks` DISABLE KEYS */;
-INSERT INTO `team_tasks` VALUES (2,NULL,9,8,'complete it','just do it','2026-02-14 00:00:00','completed','medium','2026-02-05 21:29:00','2026-02-05 21:36:33'),(4,NULL,4,14,'karle bhau jaldi','thik ','2026-02-14 00:00:00','completed','urgent','2026-02-05 21:38:14','2026-02-05 21:38:53');
-/*!40000 ALTER TABLE `team_tasks` ENABLE KEYS */;
+/* No data for `team_tasks` */
 UNLOCK TABLES;
 
 --
@@ -691,10 +652,7 @@ CREATE TABLE `teamlead_applications` (
 -- Dumping data for table `teamlead_applications`
 --
 
-LOCK TABLES `teamlead_applications` WRITE;
-/*!40000 ALTER TABLE `teamlead_applications` DISABLE KEYS */;
-INSERT INTO `teamlead_applications` VALUES (1,14,2,'i want to join\n','','Team lead was unassigned',9,'2026-02-05 21:01:24','2026-02-05 20:51:13');
-/*!40000 ALTER TABLE `teamlead_applications` ENABLE KEYS */;
+/* No data for `teamlead_applications` */
 UNLOCK TABLES;
 
 --
@@ -728,7 +686,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (4,'Aloo','aloo@gmail.com','$2y$10$BR2Af.7b734R4Sv1NgYhU.m4j1ruxPJfoiONkC1L5inIIQwZNF96W','student','active','kju','9999988888','data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><text y=\".9em\" font-size=\"90\">🐬</text></svg>','2026-01-28 20:11:27','2026-02-03 23:27:38',NULL),(5,'creator ','creater@gmail.com','$2y$10$aglTWINoZ0lhpqZQbVQ5D.gdDByvVsKbTgMuWuzoDHLKDF5QJFb1G','creator','active','kju',NULL,'https://api.dicebear.com/7.x/avataaars/svg?seed=creator+','2026-01-28 20:13:37','2026-01-30 18:34:04',NULL),(8,'System Admin','admin@eventrax.com','$2y$10$Qvp7agwT.8X0UgzsbPxpeup3fouCrs0G.i1wfMBB/WS/rNsB0DtP2','admin','active','Eventrax HQ',NULL,'https://api.dicebear.com/7.x/avataaars/svg?seed=Admin3','2026-01-30 11:19:35','2026-02-05 22:45:05',NULL),(9,'Adam','adam@gmail.com','$2y$10$VrJ0jSSSE5KzLnHmn3lAc.klfrs/RUWJ5g8f6Gzn36ZceVz4DSla6','creator','active','Kju','1212121219','data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><text y=\".9em\" font-size=\"90\">🎨</text></svg>','2026-01-30 14:13:26','2026-02-06 15:04:27',NULL),(11,'dinesh g','dineshg200611@gmail.com','$2y$10$QccScT7TQswaSmtAgavlOOxBVSqf8PvAGGEeeNLix3t/H6nWt.dTy','student','active','kristu jayanti uni',NULL,'https://api.dicebear.com/7.x/avataaars/svg?seed=dinesh+g','2026-02-02 05:55:07','2026-02-02 06:31:08',NULL),(14,'Gary bhai','gary@gmail.com','$2y$10$a4srfnqoTu6hZ.wSxut7luEfD19eAugZ5r8Y/jMMrJHjo9PeNUPZe','teamlead','active','kju',NULL,'https://api.dicebear.com/7.x/avataaars/svg?seed=TL1','2026-02-05 14:12:47','2026-02-05 22:43:12',NULL),(16,'aloopart2','aloo2@gmail.com','$2y$10$JFFGaJs95PJof.fb4qYBuu7yKFXXrzWOpld9tJNtaIkyisH0TuN3.','student','active','kju',NULL,'https://api.dicebear.com/7.x/avataaars/svg?seed=aloopart2','2026-02-05 23:17:14','2026-02-05 23:17:14',NULL);
+INSERT INTO `users` VALUES (8,'System Admin','admin@eventrax.com','$2y$10$Qvp7agwT.8X0UgzsbPxpeup3fouCrs0G.i1wfMBB/WS/rNsB0DtP2','admin','active','Eventrax HQ',NULL,'https://api.dicebear.com/7.x/avataaars/svg?seed=Admin3','2026-01-30 11:19:35','2026-02-05 22:45:05',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -762,10 +720,7 @@ CREATE TABLE `volunteer_applications` (
 -- Dumping data for table `volunteer_applications`
 --
 
-LOCK TABLES `volunteer_applications` WRITE;
-/*!40000 ALTER TABLE `volunteer_applications` DISABLE KEYS */;
-INSERT INTO `volunteer_applications` VALUES (1,2,4,'approved','want to apply as volunteer','2026-02-03 21:31:15','2026-02-03 21:31:30',8);
-/*!40000 ALTER TABLE `volunteer_applications` ENABLE KEYS */;
+/* No data for `volunteer_applications` */
 UNLOCK TABLES;
 
 --
@@ -826,10 +781,7 @@ CREATE TABLE `volunteers` (
 -- Dumping data for table `volunteers`
 --
 
-LOCK TABLES `volunteers` WRITE;
-/*!40000 ALTER TABLE `volunteers` DISABLE KEYS */;
-INSERT INTO `volunteers` VALUES (1,2,4,'Volunteer','2026-01-31 21:53:50'),(2,2,4,'Volunteer','2026-01-31 21:53:59'),(5,2,4,'Volunteer','2026-02-03 21:31:30'),(6,2,14,'Team Lead','2026-02-06 16:21:29');
-/*!40000 ALTER TABLE `volunteers` ENABLE KEYS */;
+/* No data for `volunteers` */
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
